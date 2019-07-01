@@ -2,13 +2,13 @@ const initialState = 0
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-       case 'INCREMENT':
+        case 'INCREMENT':
             return state + action.payload
-       case 'DECREMENT': 
+        case 'DECREMENT':
             return state + action.payload
-       case 'RESET' : 
+        case 'RESET':
             return action.payload
-       default: return state
+        default: return state
     }
- }
- export default reducer;
+}
+export default reducer;
